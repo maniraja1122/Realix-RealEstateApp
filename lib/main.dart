@@ -14,20 +14,28 @@ Future<void> main() async {
   runApp(MainApp());
 }
 
-class MainApp extends StatelessWidget{
+class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "Realix",
-      theme: ThemeData(primarySwatch: Colors.blue,fontFamily: GoogleFonts.lato().fontFamily,brightness:Brightness.light ,backgroundColor: Color.fromRGBO(255, 255, 255,1)),
-      darkTheme: ThemeData(primarySwatch: Colors.blue,fontFamily: GoogleFonts.lato().fontFamily,brightness:Brightness.dark,backgroundColor: Color.fromRGBO(17, 24, 19, 1)),
+      theme: ThemeData(
+          primarySwatch: Colors.blue,
+          fontFamily: GoogleFonts.lato().fontFamily,
+          brightness: Brightness.light,
+          backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Colors.blue,foregroundColor: Colors.white)),
+      darkTheme: ThemeData(
+          primarySwatch: Colors.blue,
+          fontFamily: GoogleFonts.lato().fontFamily,
+          brightness: Brightness.dark,
+          backgroundColor: Color.fromRGBO(17, 24, 19, 1),
+          floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Colors.blue,foregroundColor: Colors.white)),
       getPages: AppPages.getPages,
-      initialRoute: DBHelper.auth.currentUser==null?AppRoutes.selector:AppRoutes.home,
+      initialRoute: DBHelper.auth.currentUser == null
+          ? AppRoutes.selector
+          : AppRoutes.home,
       initialBinding: HomeBinding(),
     );
   }
-
 }
-
-
-

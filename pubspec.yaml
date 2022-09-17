@@ -41,6 +41,12 @@ dependencies:
   google_fonts: ^3.0.1
   firebase_core: ^1.22.0
   modal_progress_hud_nsn: ^0.3.0
+  google_maps_flutter: ^2.2.0
+  geolocator: ^9.0.1
+  geocoding: ^2.0.5
+  image_picker: ^0.8.5+3
+  flutter_datetime_picker: ^1.5.1
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1097947227307",
+    "project_id": "realix-5f39f",
+    "storage_bucket": "realix-5f39f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097947227307:android:105442f221492988e1c3ee",
+        "android_client_info": {
+          "package_name": "com.example.realix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097947227307-1mdq4tbfnes1kti58vs3r965empdakho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD82Y2yI5ylQYUyYGS97BLOPIKbBOgd0Y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097947227307-1mdq4tbfnes1kti58vs3r965empdakho.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097947227307-vppp3j2k168pmob0pqnhn34v08muj9jb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.realix"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

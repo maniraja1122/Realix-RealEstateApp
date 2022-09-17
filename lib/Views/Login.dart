@@ -14,7 +14,7 @@ import '../Controller/HomeController.dart';
 class Login extends GetView{
   @override
   Widget build(BuildContext context) {
-    var _controller=Get.find<HomeController>();
+    var _controller=Get.put(HomeController());
     var _key = GlobalKey<FormState>();
     var email = "";
     var pass = "";

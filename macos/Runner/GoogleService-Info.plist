@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1097947227307-vppp3j2k168pmob0pqnhn34v08muj9jb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1097947227307-vppp3j2k168pmob0pqnhn34v08muj9jb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlLs_GN_5nZ31cR8p1jIjGZGIPjln7IDc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1097947227307</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.realix</string>
+	<key>PROJECT_ID</key>
+	<string>realix-5f39f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>realix-5f39f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1097947227307:ios:8db68c0a539bbd91e1c3ee</string>
+</dict>
+</plist>

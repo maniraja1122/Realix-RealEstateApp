@@ -14,7 +14,7 @@ import '../Widgets/RoundButton.dart';
 class Signup extends GetView {
   @override
   Widget build(BuildContext context) {
-    var _controller=Get.find<HomeController>();
+    var _controller=Get.put(HomeController());
     var _key = GlobalKey<FormState>();
     var name = "";
     var email = "";
