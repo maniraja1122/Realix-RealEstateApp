@@ -28,21 +28,8 @@ class AppointmentItem extends StatelessWidget {
             return SizedBox();
           },
         ),
-        subtitle:Text(fixdate) ,
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            AppIcon(icon: Icons.check, onclick: () async {
-              await snap.reference.update({
-                "isResponded":true,
-                "isAccepted":true,
-              });
-            }),
-            AppIcon(icon: Icons.cancel, onclick: () async {
-              await snap.reference.delete();
-            }),
-          ],
-        ),
+        subtitle:Text("Due on "+fixdate) ,
+        trailing: snap.get("senderkey")==DBHelper.auth.currentUser!.uid?Icon(Icons.arrow_circle_right):Icon(Icons.arrow_circle_left)
       ),
     );
   }

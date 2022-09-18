@@ -29,15 +29,20 @@ class AppointmentView extends GetView {
           }
           if (snapshot.hasData) {
             var arr = snapshot.data!.docs;
-            arr.where((element) =>
+            arr = arr.where((element) =>
             (element.get("senderkey") == DBHelper.auth.currentUser!.uid ||
-                element.get("recieverkey") == DBHelper.auth.currentUser!.uid));
-            return ListView.builder(
-              itemCount: arr.length,
-              itemBuilder: (BuildContext context, int index) {
-                return AppointmentItem(snap: arr[index]);
-              },
-            );
+                element.get("recieverkey") == DBHelper.auth.currentUser!.uid)).toList();
+            if(!arr.isEmpty) {
+              return ListView.builder(
+                itemCount: arr.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return AppointmentItem(snap: arr[index]);
+                },
+              );
+            }
+            else{
+              return Center(child: Text("No Appointments",style: TextStyle(fontSize: 20),),);
+            }
           }
           return Center(
             child: CircularProgressIndicator(),

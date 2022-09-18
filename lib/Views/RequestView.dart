@@ -27,12 +27,17 @@ class RequestView extends GetView {
           if (snapshot.hasData) {
             var arr = snapshot.data!.docs;
             arr=arr.where((element) => !element.get("isResponded")).toList();
-            return ListView.builder(
-              itemCount: arr.length,
-              itemBuilder: (BuildContext context, int index) {
-                return RequestItem(snap: arr[index]);
-              },
-            );
+            if(!arr.isEmpty) {
+              return ListView.builder(
+                itemCount: arr.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return RequestItem(snap: arr[index]);
+                },
+              );
+            }
+            else{
+              return Center(child: Text("No Requests",style: TextStyle(fontSize: 20),),);
+            }
           }
           return Center(
             child: CircularProgressIndicator(),
